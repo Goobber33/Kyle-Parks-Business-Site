@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Row } from 'react-bootstrap';
-import AboutMe from './AboutMe';
 
 function HomePage() {
   return (
@@ -15,7 +14,6 @@ function HomePage() {
         <div className="hero-image"></div>
       </Row>
 
-      <AboutMe />
     </Container>
   );
 }

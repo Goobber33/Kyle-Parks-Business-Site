@@ -3,12 +3,16 @@ $background-color: #008080 // Teal
 $font-color: #FFFFFF // White
 $button-hover-bg: #F0F0F0 // Slightly darker white
 $button-hover-text: #005757 // Darker teal
+$about-me-bg: #FFFFFF // White
+$about-me-text: #000000 // Black
 
 .App
   background-color: $background-color
   min-height: 100vh
+  overflow-x: hidden // To hide horizontal scrollbar caused by slanted section extending out of viewport
 
 .hero-section
+  position: relative
   height: 100vh
   display: flex
   justify-content: flex-end
@@ -16,6 +20,17 @@ $button-hover-text: #005757 // Darker teal
   text-align: center
   gap: 20px
   color: $font-color
+
+  &::after
+    content: ""
+    position: absolute
+    bottom: -50px
+    left: -50%
+    height: 100px
+    width: 200%
+    background-color: $background-color
+    transform: rotate(-3deg)
+    z-index: 2
 
   h1, h2
     color: $font-color
@@ -43,7 +58,7 @@ $button-hover-text: #005757 // Darker teal
     height: 60vh
     width: 60%
     position: relative
-    
+
     &::after
       content: ""
       position: absolute
@@ -52,3 +67,8 @@ $button-hover-text: #005757 // Darker teal
       height: 100%
       width: 100%
       background-color: rgba(255, 255, 255, 0.150)
+
+.about-me
+  background: $about-me-bg
+  color: $about-me-text
+  padding: 200px 0 50px 0  // Increase the top padding here

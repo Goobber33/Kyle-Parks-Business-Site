@@ -1,10 +1,10 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
 
 function AboutMe() {
   return (
-    <Container>
-      <Row className="my-5">
+    <div className="about-me">
+      
         <Col>
           <h2>About Me</h2>
           <p>
@@ -12,8 +12,8 @@ function AboutMe() {
             I specialize in React, Node.js, and MongoDB.
           </p>
         </Col>
-      </Row>
-    </Container>
+      
+    </div>
   );
 }
 
