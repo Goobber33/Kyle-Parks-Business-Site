@@ -1,0 +1,54 @@
+// Define color variables
+$background-color: #008080 // Teal
+$font-color: #FFFFFF // White
+$button-hover-bg: #F0F0F0 // Slightly darker white
+$button-hover-text: #005757 // Darker teal
+
+.App
+  background-color: $background-color
+  min-height: 100vh
+
+.hero-section
+  height: 100vh
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  text-align: center
+  gap: 20px
+  color: $font-color
+
+  h1, h2
+    color: $font-color
+
+  p
+    color: $font-color
+
+  .btn
+    font-size: 1.2em
+    padding: 10px 30px
+    background-color: $font-color
+    border: none
+    color: $background-color
+    transition: all 0.5s ease
+
+    &:hover
+      background-color: $button-hover-bg
+      color: $button-hover-text
+
+  .hero-text
+    flex: 1
+
+  .hero-image
+    background: url('../assets/images/bg.jpg') no-repeat center center/cover
+    height: 60vh
+    width: 60%
+    position: relative
+    
+    &::after
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      height: 100%
+      width: 100%
+      background-color: rgba(255, 255, 255, 0.150)
