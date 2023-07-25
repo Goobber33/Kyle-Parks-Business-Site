@@ -30,10 +30,18 @@ function HomePage() {
           </motion.h2>
         </div>
         <div className="d-flex">
-          <div className="hero-image hero-image-1"></div>
-          <div className="hero-image hero-image-2"></div>
-          <div className="hero-image hero-image-3"></div>
-          <div className="hero-image hero-image-4"></div>
+          <div className="hero-image hero-image-1">
+            <div className="hero-image-caption">Food trucks are awesome! They bring local and world foods to our doorstep. Plus, you get to chat with the owners. They are some of my favorite clients!</div>
+          </div>
+          <div className="hero-image hero-image-2">
+            <div className="hero-image-caption"></div>
+          </div>
+          <div className="hero-image hero-image-3">
+            <div className="hero-image-caption">Caption 3</div>
+          </div>
+          <div className="hero-image hero-image-4">
+            <div className="hero-image-caption">Caption 4</div>
+          </div>
         </div>
       </Row>
     </Container>
