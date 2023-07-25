@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row } from 'react-bootstrap';
 import { motion } from 'framer-motion';
+import '../styles/Home.css'
 
 const textVariants = {
   hidden: { opacity: 0 },
@@ -29,11 +30,10 @@ function HomePage() {
           </motion.h2>
         </div>
         <div className="d-flex">
-          <div className="hero-image"></div>
-          <div className="hero-image"></div>
-          <div className="hero-image"></div>
-          <div className="hero-image"></div>
-          <div className="hero-image"></div>
+          <div className="hero-image hero-image-1"></div>
+          <div className="hero-image hero-image-2"></div>
+          <div className="hero-image hero-image-3"></div>
+          <div className="hero-image hero-image-4"></div>
         </div>
       </Row>
     </Container>
