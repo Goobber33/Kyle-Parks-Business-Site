@@ -40,19 +40,23 @@ function HomePage() {
   });
 
   useEffect(() => {
-    const timerId = setTimeout(() => {
-      setShowText({
-        heading1: true,
-        heading2: true
-      });
-    }, 400);  // Delay time before text appears
+    const timerId1 = setTimeout(() => {
+      setShowText(prev => ({ ...prev, heading1: true }));
+    }, 300);  // Delay time before heading1 appears
+
+    const timerId2 = setTimeout(() => {
+      setShowText(prev => ({ ...prev, heading2: true }));
+    }, 600);  // Delay time before heading2 appears
 
     const typeAll = async () => {
       await typeWriter(setText, "para");
     };
-    setTimeout(typeAll, 1600);
+    setTimeout(typeAll, 2600);
 
-    return () => clearTimeout(timerId);
+    return () => {
+      clearTimeout(timerId1);
+      clearTimeout(timerId2);
+    };
   }, []);
 
   return (
