@@ -9,9 +9,11 @@ function AboutMe() {
                     <Card.Body>
                         <Card.Title>About Me</Card.Title>
                         <Card.Text>
-                            Specializing in building comprehensive, dynamic websites and applications, my expertise lies in an array of technologies that facilitate powerful, responsive, and user-friendly solutions.
-                            From conceptualizing intuitive front-end interfaces to crafting robust back-end databases, my comprehensive approach ensures that every project I undertake is meticulously designed, rigorously tested, and effectively implemented.
-                            Please explore further for a deeper understanding of my offerings, along with a showcase of my previous work, encapsulating the breadth and depth of my capabilities.
+                            Greetings! I'm Kyle Parks, a dedicated Full Stack Developer with a passion for crafting innovative digital solutions.
+                            I specialize in building everything from sophisticated websites to dynamic mobile applications, and intricate databases.
+                            As the founder and sole developer of this business, my commitment is unmatched.
+                            My goal? To bring your ideas to life, whether it's an advanced business platform, a creative portfolio, or an interactive web project,
+                            I strive to create your vision flawlessly. Explore my offerings and get in touch—I'm excited to turn your dream website into a reality.
                         </Card.Text>
                     </Card.Body>
                 </Card>

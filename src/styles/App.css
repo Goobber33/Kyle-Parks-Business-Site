@@ -5,8 +5,22 @@
   font-family: 'Roboto', sans-serif;
 }
 
+/* Webkit browsers like Chrome, Safari */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #005757;
+  border-radius: 10px;
+}
+
 .about-me {
-  height: 120vh;
+  height: 130vh;
   background: #2EC4B6;
   color: #000000;
   padding: 200px 0 50px 0;

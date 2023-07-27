@@ -5,9 +5,23 @@
   justify-content: flex-end;
   align-items: center;
   text-align: center;
-  gap: 2rem;
+  
   color: #FFFFFF;
-  width: 60%;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 400px;
+  flex-shrink: 0;
+}
+
+.d-flex {
+  flex: 1;
 }
 
 .hero-section::after {
@@ -29,24 +43,35 @@
 }
 
 .hero-section h1 {
-  font-size: 4em;
+  font-size: 6em;
   padding-left: 24rem;
-  margin-top: 19rem;
+  margin-top: -14rem;
+  font-weight: 600;
 }
 
 .hero-section h2 {
   font-size: 2.5em;
-  padding-left: 22rem;
+  padding-left: 26rem;
+  font-weight: 400;
 }
 
 .hero-section p {
   color: #FFFFFF;
-  font-weight: 400;
-  font-size: 1.3em;
-  margin: 3rem auto;
-  width: 90%;
-  text-align: left;
+  font-weight: 300;
+  font-size: 2.5em;
+  margin: 2rem auto;
+  width: 80%;
+  min-height: 10rem;
 }
+
+.paragraph-box {
+  padding: 20px;
+  width: 120%;
+  margin: 30px auto;
+  text-align: center;
+  margin-left: 2.3rem;;
+}
+
 
 .hero-section .btn {
   font-size: 1.2em;
@@ -67,11 +92,11 @@
 }
 
 .hero-image {
-  height: 73vh;
-  width: 12%;
-  top: -28rem;
+  height: 85vh;
+  width: 14%;
+  top: -8rem;
   position: relative;
-  left: 67rem;
+  left: 11rem;
   clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
   margin: 0.2rem;
   transition: all 0.3s ease-in-out;
@@ -80,7 +105,7 @@
 }
 
 .hero-section .hero-image:hover {
-  width: 35%;
+  width: 37%;
 }
 
 .hero-section .hero-image::after {
@@ -141,7 +166,7 @@
 
 .hero-section .hero-image.hero-image-4::after {
   content: "";
-  background: linear-gradient(to bottom, rgba(1, 22, 39, 0.5), rgba(0,0,0,0));
+  background: linear-gradient(to bottom, rgba(255, 160, 0, 0.9), rgba(0,0,0,0));
   transition: opacity 0.6s ease-in-out;
 }
 
@@ -170,7 +195,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 10rem;
+  height: 15rem;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.8); 
   text-align: center;
@@ -187,20 +212,38 @@
 
 .hero-image-1 .hero-image-caption {
   background-color: rgba(255, 51, 102, 0.9);
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 .hero-image-2 .hero-image-caption {
   background-color: rgba(227, 255, 0, 0.9);
   color: black;
+  font-size: 1rem;
 }
 
 .hero-image-3 .hero-image-caption {
   background-color: rgba(143, 0, 255, 0.9);
+  font-size: 1rem;
 }
 
 .hero-image-4 .hero-image-caption {
-  background-color: rgba(1, 22, 39, 0.9);
+  background-color: rgba(255, 160, 0, 0.9);
+  font-size: 1rem;
+  color: black;
+}
+
+.text-appear {
+  animation: text-appear 1s linear forwards;
+  opacity: 0;
+}
+
+@keyframes text-appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 
