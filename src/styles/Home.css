@@ -6,6 +6,7 @@
   align-items: center;
   text-align: center;
   color: #FFFFFF;
+  
 }
 
 .hero-section {
@@ -26,7 +27,7 @@
 .hero-section::after {
   content: "";
   position: absolute;
-  bottom: -100px;
+  bottom: -50px;
   left: -50%;
   height: 240px;
   width: 300%;
@@ -44,7 +45,7 @@
 .hero-section h1 {
   font-size: 6em;
   padding-left: 24rem;
-  margin-top: -14rem;
+  margin-top: -6rem;
   font-weight: 600;
 }
 
@@ -69,6 +70,11 @@
   margin: 30px auto;
   text-align: center;
   margin-left: 2.3rem;;
+}
+
+.script {
+  margin-left: 28rem;
+  margin-top: -5rem;
 }
 
 

@@ -68,6 +68,10 @@ function HomePage() {
           <div className="paragraph-box">
             <p>{text.para}</p>
           </div>
+  
+            <div className="script">
+                <lottie-player src="https://lottie.host/ff533659-9bc3-441b-8126-acb3446b42c7/KMemBJ1wH1.json" background="transparent" speed="1" style={{ width: 300, height: 300 }} loop autoplay></lottie-player>
+            </div>
         </div>
 
         <div className="d-flex">
