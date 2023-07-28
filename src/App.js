@@ -2,6 +2,7 @@ import React from 'react';
 import HomePage from './components/HomePage';
 import AboutMe from './components/AboutMe';
 import NavigationBar from './components/NavBar';
+import Clients from './components/Clients';
 import './styles/App.css';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <NavigationBar />
       <HomePage />
       <AboutMe />
+      <Clients />
     </div>
   );
 }

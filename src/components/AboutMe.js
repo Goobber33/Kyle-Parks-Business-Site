@@ -1,16 +1,10 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import { Col, Row, Card } from 'react-bootstrap';
 import { motion } from 'framer-motion';
-import '../styles/About.css'
+import '../styles/About.css';
 
 function AboutMe() {
-    const ref1 = useRef(null);
-
-
-    const [isVisible1, setIsVisible1] = React.useState(false);
-
-
-    const variants = {
+    const variants1 = {
         hidden: { opacity: 0, y: 100 },
         show: {
             opacity: 1,
@@ -21,68 +15,111 @@ function AboutMe() {
         },
     };
 
-    useEffect(() => {
-        const refs = [ref1];
-        const isVisibleStates = [setIsVisible1];
+    const variants2 = {
+        hidden: { opacity: 0, y: 100 },
+        show: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 1,
+                delay: 0.5,
+            },
+        },
+    };
 
-        const observers = refs.map((ref, index) => {
-            const observer = new IntersectionObserver(
-                ([entry]) => {
-                    isVisibleStates[index](entry.isIntersecting);
-                },
-                {
-                    root: null,
-                    rootMargin: '0px',
-                    threshold: 0.5,
-                }
-            );
+    const variants3 = {
+        hidden: { opacity: 0, y: 100 },
+        show: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 1,
+                delay: 1.0,
+            },
+        },
+    };
 
-            if (ref.current) {
-                observer.observe(ref.current);
-            }
-
-            return () => {
-                if (ref.current) {
-                    observer.unobserve(ref.current);
-                }
-            };
-        });
-
-        return () => {
-            observers.forEach((removeObserver) => removeObserver());
-        };
-    }, []);
+    const variants4 = {
+        hidden: { opacity: 0, y: 100 },
+        show: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 1,
+                delay: 1.5,
+            },
+        },
+    };
 
     return (
         <div className="about-me">
-            <Row>
+            <Row className="card-row">
                 <Col xs={12} md={6} lg={4} className="left-card">
                     <motion.div
-                        ref={ref1}
-                        variants={variants}
+                        variants={variants1}
                         initial="hidden"
-                        animate={isVisible1 ? 'show' : 'hidden'}
+                        animate="show"
                     >
                         <Card>
                             <Card.Body>
                                 <Card.Text>
                                     Greetings! I'm Kyle Parks, a dedicated Full Stack Developer with a passion for crafting innovative digital solutions.
-                                    I specialize in building everything from sophisticated websites to dynamic mobile applications, and intricate databases.
-                                    
                                 </Card.Text>
                             </Card.Body>
                         </Card>
                     </motion.div>
                 </Col>
 
+                <Col xs={12} md={6} lg={4} className="right-card">
+                    <motion.div
+                        variants={variants2}
+                        initial="hidden"
+                        animate="show"
+                    >
+                        <Card>
+                            <Card.Body>
+                                <Card.Text>
+                                    I specialize in building everything from sophisticated websites to dynamic mobile applications, and intricate databases.
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </motion.div>
+                </Col>
+
+                <Col xs={12} md={6} lg={4} className="left-card-two">
+                    <motion.div
+                        variants={variants3}
+                        initial="hidden"
+                        animate="show"
+                    >
+                        <Card>
+                            <Card.Body>
+                                <Card.Text className="ctext">
+                                As the founder and sole developer of this business, my commitment is unmatched. 
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </motion.div>
+                </Col>
+
+                <Col xs={12} md={6} lg={4} className="right-card-two">
+                    <motion.div
+                        variants={variants4}
+                        initial="hidden"
+                        animate="show"
+                    >
+                        <Card>
+                            <Card.Body>
+                                <Card.Text className="ctext">
+                                Explore my offerings and get in touch—I'm excited to turn your dream website into a reality. 
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </motion.div>
+                </Col>
             </Row>
         </div>
     );
 }
 
 export default AboutMe;
-
-
-// As the founder and sole developer of this business, my commitment is unmatched.
-//                                     My goal? To bring your ideas to life, whether it's an advanced business platform, a creative portfolio, or an interactive web project,
-//                                     I strive to create your vision flawlessly. Explore my offerings and get in touch—I'm excited to turn your dream website into a reality.
