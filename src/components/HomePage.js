@@ -60,6 +60,7 @@ function HomePage() {
   }, []);
 
   return (
+    <div style={{zIndex: '9998', position: 'relative'}}>
     <Container fluid className="px-0">
       <Row className="hero-section m-0 d-flex">
         <div className="hero-text">
@@ -90,6 +91,7 @@ function HomePage() {
         </div>
       </Row>
     </Container>
+    </div>
   );
 }
 
