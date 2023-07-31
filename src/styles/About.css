@@ -1,7 +1,7 @@
 .about-me {
     height: 120vh;
     position: relative; /* Add this line */
-    z-index: 1; /* Add this line */
+    z-index: 0;
     background: #2EC4B6;
     color: #000000;
     padding: 200px 0 50px 0;
@@ -21,14 +21,13 @@
 
 .about-me .row {
     display: flex;
-    justify-content: space-between; /* This will spread the children across the row */
+    justify-content: space-between;
     align-items: center;
 }
 
 .card {
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-    background: linear-gradient(135deg, #56CCF2 0%, #2F80ED 100%); /* Blue gradient */
+    background: linear-gradient(135deg, #56CCF2 0%, #2F80ED 100%);
     color: #ffffff !important;
     width: 210%;
     height: 13rem !important;
@@ -38,6 +37,7 @@
     position: relative;
     overflow: hidden;
     top: 10rem;
+    border: 2px solid black;
 }
 
 .card:before {
@@ -56,6 +56,18 @@
     z-index: 10;
     padding: 30px;
     top: 0.8rem;
+}
+
+.card-image {
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
 }
 
 .left-card {
@@ -82,51 +94,3 @@
     margin-top: 1rem;
 }
 
-.card-row::before,
-.card-row::after,
-.left-card::before {
-    content: "";
-    position: absolute;
-    top: 28%; 
-    width: 2px;
-    height: 24.4%; 
-    background-color: darkblue;
-    box-shadow: 0 0 10px darkblue, 0 0 20px purple, 0 0 30px darkblue, 0 0 40px purple;
-    animation: glow 2s ease-in-out infinite;
-    z-index: 5;
-}
-
-.card-row::before {
-    left: 50%;
-    transform: rotate(-34deg);
-    animation-delay: 0s; /* No delay for the first line */
-}
-
-.card-row::after {
-    height: 22.5%;
-    top: 48.2%;
-    left: 50%;
-    transform: rotate(37deg);
-    animation-delay: 0.7s; /* 0.7 second delay for the second line */
-}
-
-.left-card::before {
-    height: 129%;
-    top: 313%;
-    left: 138%;
-    transform: rotate(-37deg);
-    animation-delay: 1.4s; /* 1.4 seconds delay for the third line */
-}
-
-@keyframes glow {
-    0%, 100% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0.5;
-    }
-}
-
-.left-card, .right-card, .left-card-two, .right-card-two {
-    position: relative;
-}

@@ -1,121 +1,75 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Col, Row, Card } from 'react-bootstrap';
-import { motion } from 'framer-motion';
+import { Slide } from 'react-awesome-reveal';
 import '../styles/About.css';
 
 function AboutMe() {
-    const variants1 = {
-        hidden: { opacity: 0, y: 100 },
-        show: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                duration: 1,
-            },
-        },
-    };
+    const [revealed, setRevealed] = useState(false);
 
-    const variants2 = {
-        hidden: { opacity: 0, y: 100 },
-        show: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                duration: 1,
-                delay: 0.5,
-            },
-        },
-    };
+    const handleScroll = () => {
+        const offset = window.scrollY;
+        if (offset > 200) {
+            setRevealed(true);
+        }
+    }
 
-    const variants3 = {
-        hidden: { opacity: 0, y: 100 },
-        show: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                duration: 1,
-                delay: 1.0,
-            },
-        },
-    };
-
-    const variants4 = {
-        hidden: { opacity: 0, y: 100 },
-        show: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                duration: 1,
-                delay: 1.5,
-            },
-        },
-    };
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll)
+    })
 
     return (
         <div className="about-me">
+            {!revealed && (
+                <div>
+                    <Slide direction="up">
+                        <div className="upper-half" style={{backgroundColor: '#2EC4B6', height: '50vh', position: 'fixed', width: '100%'}} />
+                    </Slide>
+                    <Slide direction="down">
+                        <div className="lower-half" style={{backgroundColor: '#2EC4B6', height: '50vh', position: 'fixed', bottom: 0, width: '100%'}} />
+                    </Slide>
+                </div>
+            )}
+
             <Row className="card-row">
                 <Col xs={12} md={6} lg={4} className="left-card">
-                    <motion.div
-                        variants={variants1}
-                        initial="hidden"
-                        animate="show"
-                    >
-                        <Card>
-                            <Card.Body>
-                                <Card.Text>
-                                    Greetings! I'm Kyle Parks, a dedicated Full Stack Developer with a passion for crafting innovative digital solutions.
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </motion.div>
+                    <Card>
+                        <div className="card-image" />
+                        <Card.Body>
+                            <Card.Text>
+                                Greetings! I'm Kyle Parks, a dedicated Full Stack Developer with a passion for crafting innovative digital solutions.
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
                 </Col>
 
                 <Col xs={12} md={6} lg={4} className="right-card">
-                    <motion.div
-                        variants={variants2}
-                        initial="hidden"
-                        animate="show"
-                    >
-                        <Card>
-                            <Card.Body>
-                                <Card.Text>
-                                    I specialize in building everything from sophisticated websites to dynamic mobile applications, and intricate databases.
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </motion.div>
+                    <Card>
+                        <Card.Body>
+                            <Card.Text>
+                                I specialize in building everything from sophisticated websites to dynamic mobile applications, and intricate databases.
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
                 </Col>
 
                 <Col xs={12} md={6} lg={4} className="left-card-two">
-                    <motion.div
-                        variants={variants3}
-                        initial="hidden"
-                        animate="show"
-                    >
-                        <Card>
-                            <Card.Body>
-                                <Card.Text className="ctext">
-                                As the founder and sole developer of this business, my commitment is unmatched. 
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </motion.div>
+                    <Card>
+                        <Card.Body>
+                            <Card.Text className="ctext">
+                                As the founder and sole developer of this business, my commitment is unmatched.
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
                 </Col>
 
                 <Col xs={12} md={6} lg={4} className="right-card-two">
-                    <motion.div
-                        variants={variants4}
-                        initial="hidden"
-                        animate="show"
-                    >
-                        <Card>
-                            <Card.Body>
-                                <Card.Text className="ctext">
-                                Explore my offerings and get in touch—I'm excited to turn your dream website into a reality. 
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </motion.div>
+                    <Card>
+                        <Card.Body>
+                            <Card.Text className="ctext">
+                                Explore my offerings and get in touch—I'm excited to turn your dream website into a reality.
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
                 </Col>
             </Row>
         </div>
