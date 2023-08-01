@@ -33,14 +33,20 @@ function AboutMe() {
                 <div className={`cover-bottom ${inView ? 'animate-away' : ''}`}></div>
                 <Row className="card-row">
                     <Col xs={12} md={6} lg={4} className="left-card">
-                        <div 
+                        <div
                             className={`flip-card ${isFlipped ? "hover" : ""}`}
-                            onMouseEnter={handleHover} 
+                            onMouseEnter={handleHover}
                             onMouseLeave={handleHover}>
                             <div className="flip-card-inner">
                                 <div className="flip-card-front">
-                                <img className="my-image" src={kyleImage} alt="Kyle" />
-                                    <p>Hello! My name is Kyle Parks, hover/click to read more about me!</p>
+                                    <div className="image-and-title">
+                                        <img className="my-image" src={kyleImage} alt="Kyle" />
+                                        <h1 className='h1-text'>Founder <span style={{ color: '#2EC4B6' }}>/</span> Owner</h1>
+                                    </div>
+                                    <div className="front-text">
+                                        <p>Hello! My name is <span style={{ fontFamily: 'Orbitron, sans-serif' }}>Kyle Parks</span>, I am the founder and owner of this business.</p>
+                                        <p><span style={{ textDecoration: 'underline', textDecorationColor: '#2EC4B6' }}>Hover</span> or <span style={{ textDecoration: 'underline', textDecorationColor: '#2EC4B6' }}>click</span> here to learn more about me!</p>
+                                    </div>
                                 </div>
                                 <div className="flip-card-back">
                                     <p>
