@@ -3,6 +3,8 @@ import HomePage from './components/HomePage';
 import AboutMe from './components/AboutMe';
 import NavigationBar from './components/NavBar';
 import Clients from './components/Clients';
+import Testimonials from './components/Testimonials';
+import Contact from './components/Contact';
 import { Element } from 'react-scroll';
 import './styles/App.css';
 
@@ -19,7 +21,12 @@ function App() {
       <Element name="projects">
         <Clients />
       </Element>
-      {/* Wrap other sections similarly with Element */}
+      <Element name="testimonials">
+        <Testimonials />
+      </Element>
+      <Element name="contact">
+        <Contact />
+      </Element>
     </div>
   );
 }

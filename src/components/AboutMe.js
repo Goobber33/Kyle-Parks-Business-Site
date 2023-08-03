@@ -44,7 +44,7 @@ function AboutMe() {
                                         <h1 className='h1-text'>Founder <span style={{ color: '#2EC4B6' }}>/</span> Owner</h1>
                                     </div>
                                     <div className="front-text">
-                                        <p>Hello! My name is <span style={{ fontFamily: 'Orbitron, sans-serif' }}>Kyle Parks</span>, I am the founder and owner of this business.</p>
+                                        <p>Hello! My name is Kyle Parks, I am the founder and owner of this business.</p>
                                         <p><span style={{ textDecoration: 'underline', textDecorationColor: '#2EC4B6' }}>Hover</span> or <span style={{ textDecoration: 'underline', textDecorationColor: '#2EC4B6' }}>click</span> here to learn more about me!</p>
                                     </div>
                                 </div>

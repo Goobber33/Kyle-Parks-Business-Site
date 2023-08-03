@@ -1,30 +1,50 @@
 import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
+import { Fade } from 'react-awesome-reveal';
+import Shed from '../assets/images/shed.jpg'
+import '../styles/Clients.css'
 
 // Sample data, replace with your real data
 const clientsData = [
-  { name: "Client 1", logo: "/path/to/logo1.png" },
-  { name: "Client 2", logo: "/path/to/logo2.png" },
-  { name: "Client 3", logo: "/path/to/logo3.png" },
+  {
+    name: "The Shed",
+    logo: "/path/to/logo1.png",
+    description: "This project is a web application for The Shed, a local gym in Sandpoint, Idaho owned by Jen Barden. It offers information about the gym, services provided, contact details, and much more!",
+    website: "https://goobber33.github.io/The-Shed/"
+  },
+  { name: "Client 2", logo: "/path/to/logo2.png", description: "This is a description of the work I did with Client 2." },
+  { name: "Client 3", logo: "/path/to/logo3.png", description: "This is a description of the work I did with Client 3." },
   // add more clients as needed
 ];
 
 function Clients() {
+  const handleClick = (website) => {
+    window.open(website, "_blank");
+  };
+
   return (
-    <Container>
-      <h2>Our Clients</h2>
-      <Row>
-        {clientsData.map((client, index) => (
-          <Col key={index} xs={12} md={6} lg={4}>
-            <Card>
-              <Card.Img variant="top" src={client.logo} />
-              <Card.Body>
-                <Card.Title>{client.name}</Card.Title>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
-      </Row>
+    <Container style={{ height: "310vh", overflow: "auto", position: "relative", zIndex: 9996 }}>
+      <h2 className="text-center" style={{ color: "white", marginTop: "12rem", marginBottom: "8rem", fontWeight: "600", fontSize: "4rem", fontFamily: "'Orbitron', sans-serif" }}>Our Clients</h2>
+      {clientsData.map((client, index) => (
+        <Fade key={index} direction={index % 2 === 0 ? "left" : "right"} triggerOnce fraction={0.4}>
+          <Row className="align-items-center my-3">
+            <Col xs={12} className="text-center">
+              <img
+                src={Shed}
+                alt="Shed"
+                className="my-5 client-image"
+                style={{ width: "100%", maxWidth: "55rem", height: "auto", borderRadius: "45px", transition: "box-shadow .3s" }}
+                onClick={() => handleClick(client.website)}
+              />
+              <h3 className="text-center" style={{ color: "white", fontWeight: "600", fontSize: "4rem" }}>
+                <span style={{ color: '#dde04b' }}>THE</span>
+                <span style={{ color: '#54b04d' }}> SHED</span>
+              </h3>
+              <p style={{ color: "white", fontWeight: "400", fontSize: "1.5rem", width: "60%", margin: "0 auto" }} className="my-4">{client.description}</p>
+            </Col>
+          </Row>
+        </Fade>
+      ))}
     </Container>
   );
 }
