@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row } from 'react-bootstrap';
-import '../styles/Home.css'
+import '../styles/Home.scss'
 
 const content = {
   heading1: "Kyle Parks",

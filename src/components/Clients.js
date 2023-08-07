@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Fade } from 'react-awesome-reveal';
 import Shed from '../assets/images/shed.jpg'
-import '../styles/Clients.css'
+import '../styles/Clients.scss'
 
 // Sample data, replace with your real data
 const clientsData = [
@@ -12,8 +12,7 @@ const clientsData = [
     description: "This project is a web application for The Shed, a local gym in Sandpoint, Idaho owned by Jen Barden. It offers information about the gym, services provided, contact details, and much more!",
     website: "https://goobber33.github.io/The-Shed/"
   },
-  { name: "Client 2", logo: "/path/to/logo2.png", description: "This is a description of the work I did with Client 2." },
-  { name: "Client 3", logo: "/path/to/logo3.png", description: "This is a description of the work I did with Client 3." },
+  
   // add more clients as needed
 ];
 
@@ -23,8 +22,8 @@ function Clients() {
   };
 
   return (
-    <Container style={{ height: "310vh", overflow: "auto", position: "relative", zIndex: 9996 }}>
-      <h2 className="text-center" style={{ color: "white", marginTop: "12rem", marginBottom: "8rem", fontWeight: "600", fontSize: "4rem", fontFamily: "'Orbitron', sans-serif" }}>Our Clients</h2>
+    <Container style={{ height: "140vh", overflow: "auto", position: "relative", zIndex: 9996 }}>
+      <h2 className="text-center" style={{ color: "white", marginTop: "12rem", marginBottom: "8rem", fontWeight: "600", fontSize: "4rem", fontFamily: "'Orbitron', sans-serif" }}>My Clients</h2>
       {clientsData.map((client, index) => (
         <Fade key={index} direction={index % 2 === 0 ? "left" : "right"} triggerOnce fraction={0.4}>
           <Row className="align-items-center my-3">

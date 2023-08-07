@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import Headroom from 'react-headroom';
 import { Link } from 'react-scroll';
-import '../styles/Navbar.css';
+import '../styles/Navbar.scss';
 
 function NavigationBar() {
   return (
@@ -41,7 +41,7 @@ function NavigationBar() {
                 >Clients</Link>
                 <Link 
                   activeClass="active"
-                  to="contact"
+                  to="testimonials"
                   spy={true}
                   smooth={true}
                   duration={0}

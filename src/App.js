@@ -6,7 +6,7 @@ import Clients from './components/Clients';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import { Element } from 'react-scroll';
-import './styles/App.css';
+import './styles/App.scss';
 
 function App() {
   return (
