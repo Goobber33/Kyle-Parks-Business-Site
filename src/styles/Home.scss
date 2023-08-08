@@ -5,6 +5,7 @@
   align-items: center;
   text-align: center;
   color: #FFFFFF;
+  background-color: #1A535C;
 }
 
 .hero-section {
@@ -24,6 +25,8 @@ h1 {
 
 .d-flex {
   flex: 1;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .hero-section h1, .hero-section h2 {
@@ -35,7 +38,7 @@ h1 {
 .hero-section h1 {
   width: 120%;
   font-size: 6.5em;
-  padding-left: 18rem;
+  padding-left: 15rem;
   margin-top: -6rem;
   padding-bottom: 1rem;
   font-weight: 1000;
@@ -43,8 +46,44 @@ h1 {
 
 .hero-section h2 {
   font-size: 2.5em;
-  padding-left: 26rem;
+  padding-left: 23rem;
   font-weight: 400;
+}
+
+.text-1 {
+  position: absolute;
+  top: 2.4rem; // Adjust according to your requirements
+  left: 75rem;
+  z-index: 2;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.text-2 {
+  position: absolute;
+  top: 2.4rem; // Adjust according to your requirements
+  left: 103rem;
+  z-index: 2;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.text-3 {
+  position: absolute;
+  top: 26rem; // Adjust according to your requirements
+  left: 75rem;
+  z-index: 2;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.text-4 {
+  position: absolute;
+  top: 26rem; // Adjust according to your requirements
+  left: 101rem;
+  z-index: 2;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .hero-section p {
@@ -54,6 +93,7 @@ h1 {
   margin: 2rem auto;
   width: 80%;
   min-height: 10rem;
+  margin-left: 4rem;
 }
 
 .paragraph-box {
@@ -65,7 +105,7 @@ h1 {
 }
 
 .script {
-  margin-left: 28rem;
+  margin-left: 25rem;
   margin-top: -5rem;
 }
 
@@ -74,7 +114,7 @@ h1 {
   padding: 10px 30px;
   background-color: #FFFFFF;
   border: none;
-  color: #2EC4B6;
+  color: #1A535C;
   transition: all 0.5s ease;
 }
 
@@ -88,20 +128,18 @@ h1 {
 }
 
 .hero-image {
-  height: 81vh;
-  width: 14%;
-  top: -6rem;
+  height: 35vh;
+  width: calc(43% - 0.4rem);
+  top: -3.3rem;
   position: relative;
-  left: 11rem;
+  left: 7rem;
   margin: 0.2rem;
   transition: all 0.3s ease-in-out;
   transform-origin: right center;
   overflow: hidden;
   border-radius: 25px;
-}
-
-.hero-section .hero-image:hover {
-  width: 37%;
+  margin-bottom: 3rem !important;
+  margin: 0.4rem;
 }
 
 .hero-section .hero-image::after {
@@ -135,7 +173,7 @@ h1 {
 
 .hero-section .hero-image.hero-image-2::after {
   content: "";
-  background: linear-gradient(to bottom, rgba(227, 255, 0, 0.5), rgba(0,0,0,0));
+  background: linear-gradient(to bottom, rgba(34, 139, 34, 0.5), rgba(0,0,0,0));
   transition: opacity 0.6s ease-in-out;
   border-radius: 25px;
 }
@@ -209,29 +247,29 @@ h1 {
 }
 
 .hero-image-1 .hero-image-caption {
-  background-color: rgba(255, 51, 102, 0.9);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),rgba(255, 51, 102, 0.9);
   font-size: 1.3rem;
-  height: 12rem;
+  height: auto;
 }
 
 .hero-image-2 .hero-image-caption {
-  background-color: rgba(227, 255, 0, 0.9);
-  color: black;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6))rgba(34, 139, 34, 0.9);
+  color: white;
   font-size: 1.3rem;
-  height: 19rem;
+  height: auto;
 }
 
 .hero-image-3 .hero-image-caption {
-  background-color: rgba(143, 0, 255, 0.9);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),rgba(143, 0, 255, 0.9);
   font-size: 1.3rem;
-  height: 19rem;
+  height: auto;
 }
 
 .hero-image-4 .hero-image-caption {
-  background-color: rgba(255, 160, 0, 0.9);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),rgba(255, 165, 0, 0.9);
   font-size: 1.3rem;
-  height: 17rem;
-  color: black;
+  height: auto;
+  color: white;
 }
 
 .text-appear {
@@ -247,6 +285,30 @@ h1 {
     opacity: 1;
   }
 }
+
+.hero-image-1:hover {
+  cursor: pointer;
+  box-shadow: -10px 10px 20px rgba(255, 51, 102, 0.5), -6px 6px 6px rgba(0,0,0,0.23);
+  transform: scale(1.01);
+}
+
+.hero-image-3:hover {
+  cursor: pointer;
+  box-shadow: -10px 10px 20px rgba(143, 0, 255, 0.5), -6px 6px 6px rgba(0,0,0,0.23);
+  transform: scale(1.01);
+}
+
+.hero-image-2:hover {
+  cursor: pointer;
+  box-shadow: 10px 10px 20px rgba(34, 139, 34, 0.5), 6px 6px 6px rgba(0,0,0,0.23);
+  transform: scale(1.01);
+}
+.hero-image-4:hover {
+  cursor: pointer;
+  box-shadow: 10px 10px 20px rgba(255, 165, 0, 0.5), 6px 6px 6px rgba(0,0,0,0.23);
+  transform: scale(1.01);
+}
+
 
 
 @media (max-width: 576px) {

@@ -1,5 +1,5 @@
 .testimonials {
-  height: 350vh;
+  height: 240vh;
   position: relative;
   color: #000000;
   padding: 200px 0 50px 0;
@@ -31,11 +31,12 @@
   align-items: flex-start;
 
   .message {
-    color: white;
+    color: black;
     margin-right: 25%;
-    background: rgb(255,51,102);
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), rgb(255, 51, 102);
     background-attachment: fixed;
     position: relative;
+    font-weight: 400;
 
     &.last {
       &:before {
@@ -46,7 +47,7 @@
         left: -8px;
         height: 20px;
         width: 20px;
-        background: rgb(255,51,102);
+        background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), rgb(255, 51, 102);
         background-attachment: fixed;
         border-bottom-right-radius: 15px;
       }
@@ -72,10 +73,10 @@
   .message {
     color: white;
     margin-left: 25%;
-    background: rgb(143, 0, 255);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), rgb(143, 0, 255);
     background-attachment: fixed;
     position: relative;
-    font-weight: 500;
+    font-weight: 400;
 
     &.last {
       &:before {
@@ -86,7 +87,7 @@
         right: -8px;
         height: 20px;
         width: 20px;
-        background: rgb(143, 0, 255);
+        background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), rgb(143, 0, 255);
         background-attachment: fixed;
         border-bottom-left-radius: 15px;
       }
@@ -106,9 +107,52 @@
   }
 }
 
+.others {
+  align-items: flex-start;
+  position: relative;
+
+  .message {
+    color: black;
+    margin-right: 25%; // This was changed from margin-left
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), rgb(255, 160, 0);
+    background-attachment: fixed;
+    position: absolute;
+    font-weight: 500;
+    left: 26%;
+    top: -3rem;
+
+    &.last {
+      &:before {
+        content: "";
+        position: absolute;
+        z-index: 0;
+        bottom: 0;
+        left: -8px; // This was changed from right
+        height: 20px;
+        width: 20px;
+        background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), rgb(255, 160, 0);
+        background-attachment: fixed;
+        border-bottom-right-radius: 15px; // This was changed from border-bottom-left
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        left: -10px; // This was changed from right
+        width: 10px;
+        height: 20px;
+        background: white;
+        border-bottom-right-radius: 10px; // This was changed from border-bottom-left
+      }
+    }
+  }
+}
+
 .testimonial-image {
-  width: 25rem;
-  height: 28rem;
+  width: 18rem;
+  height: 18rem;
   border-radius: 50%;
   margin-right: 20px;
   object-fit: cover;
@@ -117,14 +161,25 @@
 }
 
 .testimonial-image2 {
-  width: 24rem;
-  height: 28rem;
+  width: 18rem;
+  height: 18rem;
   border-radius: 50%;
   margin-right: 15rem;
   object-fit: cover;
   margin-bottom: 10rem;
   margin-top: 18rem;
   border: 6px solid rgb(143, 0, 255);
+}
+
+.testimonial-image3 {
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+  margin-right: 15rem;
+  object-fit: cover;
+  margin-bottom: 10rem;
+  margin-top: 18rem;
+  border: 6px solid rgb(255, 160, 0);
 }
 
 .message-container {
@@ -137,17 +192,11 @@
   width: 130%;
 }
 
-.testimonial-image3 {
-  width: 24rem;
-  height: 28rem;
-  border-radius: 50%;
-  margin-right: 15rem;
-  object-fit: cover;
-  margin-bottom: 10rem;
-  margin-top: 18rem;
-  border: 6px solid rgb(143, 0, 255);
+.message-box-2 {
+  width: 120%;
 }
 
-.message-box-2 {
-  width: 150%;
+.third-chatbox {
+  flex-direction: row-reverse;
 }
+

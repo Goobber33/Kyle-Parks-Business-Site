@@ -7,17 +7,15 @@ import '../styles/Contact.scss';
 
 function PricingCard() {
     return (
-        <div className="d-flex justify-content-center">
-            <Card style={{ width: '18rem' }} className="mb-4 text-center">
+        <div className="pricing-card-container">
+            <Card className="mb-4">
                 <Card.Body>
                     <Card.Title>My Prices</Card.Title>
-                    <Card.Text>
-                        Service 1: $100
-                        <br />
-                        Service 2: $200
-                        <br />
-                        Service 3: $300
-                    </Card.Text>
+                    <div>
+                        <Card.Text>Business Site: $45/hr</Card.Text>
+                        <Card.Text>Portfolio: $35/hr</Card.Text>
+                        <Card.Text>Configuration/Maintenance: $25/hr</Card.Text>
+                    </div>
                 </Card.Body>
             </Card>
         </div>

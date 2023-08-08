@@ -22,7 +22,7 @@ function Clients() {
   };
 
   return (
-    <Container style={{ height: "140vh", overflow: "auto", position: "relative", zIndex: 9996 }}>
+    <Container style={{ backgroundColor: "#1A535C",height: "140vh", overflow: "auto", position: "relative", zIndex: 9996 }}>
       <h2 className="text-center" style={{ color: "white", marginTop: "12rem", marginBottom: "8rem", fontWeight: "600", fontSize: "4rem", fontFamily: "'Orbitron', sans-serif" }}>My Clients</h2>
       {clientsData.map((client, index) => (
         <Fade key={index} direction={index % 2 === 0 ? "left" : "right"} triggerOnce fraction={0.4}>
