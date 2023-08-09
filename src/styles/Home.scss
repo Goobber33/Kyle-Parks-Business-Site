@@ -19,6 +19,7 @@
   flex-shrink: 0;
 }
 
+
 h1 {
   font-family: 'Orbitron', sans-serif;
 }
@@ -38,7 +39,7 @@ h1 {
 .hero-section h1 {
   width: 120%;
   font-size: 6.5em;
-  padding-left: 15rem;
+  padding-left: 14rem;
   margin-top: -6rem;
   padding-bottom: 1rem;
   font-weight: 1000;
@@ -70,7 +71,7 @@ h1 {
 
 .text-3 {
   position: absolute;
-  top: 26rem; // Adjust according to your requirements
+  top: 26.7rem; // Adjust according to your requirements
   left: 75rem;
   z-index: 2;
   font-size: 2rem;
@@ -79,7 +80,7 @@ h1 {
 
 .text-4 {
   position: absolute;
-  top: 26rem; // Adjust according to your requirements
+  top: 26.7rem; // Adjust according to your requirements
   left: 101rem;
   z-index: 2;
   font-size: 2rem;
@@ -93,7 +94,7 @@ h1 {
   margin: 2rem auto;
   width: 80%;
   min-height: 10rem;
-  margin-left: 4rem;
+  margin-left: 3.5rem;
 }
 
 .paragraph-box {
@@ -105,7 +106,7 @@ h1 {
 }
 
 .script {
-  margin-left: 25rem;
+  margin-left: 24rem;
   margin-top: -5rem;
 }
 
@@ -139,6 +140,7 @@ h1 {
   overflow: hidden;
   border-radius: 25px;
   margin-bottom: 3rem !important;
+  margin-top: 1rem !important;
   margin: 0.4rem;
 }
 

@@ -1,0 +1,117 @@
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Your tablet specific styles go here */
+
+  .hero-section h1 {
+    font-size: 2.8em;
+    padding-left: 4rem;
+    margin-top: -34rem;
+    word-spacing: -0.1rem;
+  }
+
+  .hero-section h2 {
+    font-size: 1em;
+    padding-left: 8rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+    width: 100%;
+    margin-left: -3.1rem;
+    margin-top: -1rem;
+  }
+
+  .script {
+    margin-left: 8rem !important;
+    margin-top: -12rem;
+  }
+
+  .script lottie-player {
+    width: 150px !important;
+    height: 150px !important;
+  }
+
+  .hero-text {
+    min-width: 200px;
+  }
+
+  .text-1,
+  .text-2,
+  .text-3,
+  .text-4 {
+    left: 60rem;
+  }
+
+  .hero-image {
+    width: 10rem;
+    height: 10rem;
+    margin: 25%;
+    margin-bottom: 1.9rem !important;
+    padding: 0; 
+    margin-left: -5rem;
+  }
+
+  .d-flex {
+    margin-top: -41rem !important;
+  }
+
+  .text-1 {
+    font-size: 1.3rem;
+    margin-left: -32.2rem !important;
+    margin-top: -19rem;
+  }
+
+  .text-2 {
+    font-size: 1.3rem;
+    margin-left: -30.4rem !important;
+    margin-top: -6rem;
+  }
+
+  .text-3 {
+    font-size: 1.3rem;
+    margin-left: -21.6rem !important;
+    margin-top: -43.3rem;
+  }
+
+  .text-4 {
+    font-size: 1.3rem;
+    margin-left: -21rem !important;
+    margin-top: -30.3rem;
+  }
+  
+}
+
+@media only screen and (max-width: 767px) {
+  /* Your mobile specific styles go here */
+
+  .hero-section h1 {
+    font-size: 3em;
+    padding-left: 3rem;
+    margin-top: -2rem;
+  }
+
+  .hero-section h2 {
+    font-size: 1.5em;
+    padding-left: 4rem;
+  }
+
+  .hero-text {
+    min-width: 200px;
+  }
+
+  .text-1,
+  .text-2,
+  .text-3,
+  .text-4 {
+    font-size: 1.5rem;
+    left: 2rem;
+    top: 1rem; /* Adjust as per design requirement */
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .d-flex {
+    flex-direction: column;
+  }
+}
