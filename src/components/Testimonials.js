@@ -2,6 +2,7 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import { Fade } from 'react-awesome-reveal';
 import '../styles/Testimonials.scss';
+import '../styles/TestimonialsQueries.scss'
 
 import TestimonialImage1 from '../assets/images/jen.jpeg'; // Import the first image
 import TestimonialImage2 from '../assets/images/casey.jpeg';

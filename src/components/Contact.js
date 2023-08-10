@@ -4,6 +4,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithubAlt, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import Card from 'react-bootstrap/Card';
 import '../styles/Contact.scss';
+import '../styles/ContactQuery.scss';
 
 function PricingCard() {
     return (

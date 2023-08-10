@@ -1,0 +1,48 @@
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .testimonials {
+    height: 500vh;
+  }
+
+  .yours {
+    align-items: flex-start;
+
+    .message {
+      margin-right: 10%;
+      margin-left: -6rem;
+      margin-top: -8rem;
+    }
+  }
+
+  .testimonial-image {
+    margin-top: 7rem;
+  }
+
+  .testimonial-image2 {
+    margin-left: 3rem !important;
+    margin-top: 25rem !important;
+  }
+
+  .testimonial-image3 {
+    margin-top: 38rem;
+    margin-left: 3rem;
+  }
+
+  .mine {
+  
+    .message {
+     
+      margin-left: 4%;
+      margin-top: -7rem;
+     
+
+    }
+}
+
+  .others {
+  
+    .message {
+      margin-left: 18%; // This was changed from margin-left
+    }
+}
+
+}

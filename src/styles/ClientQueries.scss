@@ -1,4 +1,9 @@
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .container {
+        height: 150vh !important;
+    }
+
     .client-image {
       max-width: 30rem !important; /* Adjust size for mobile */
     }
@@ -14,6 +19,6 @@
   
     p {
       font-size: 1rem !important; /* Adjust paragraph size for mobile */
-      width: 80%; /* Adjust width for mobile */
+      
     }
   }
