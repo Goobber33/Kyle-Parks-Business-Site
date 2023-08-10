@@ -3,6 +3,7 @@ import { Button, Col, Row } from 'react-bootstrap';
 import { useInView } from 'react-intersection-observer';
 import ScrollIntoViewIfNeeded from 'react-scroll-into-view-if-needed';
 import '../styles/About.scss';
+import '../styles/AboutQueries.scss';
 import kyleImage from '../assets/images/kyle.jpeg';
 
 function AboutMe() {

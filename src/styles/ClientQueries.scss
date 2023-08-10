@@ -1,0 +1,19 @@
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .client-image {
+      max-width: 30rem !important; /* Adjust size for mobile */
+    }
+  
+    h3 {
+      font-size: 2rem !important; /* Adjust font size for mobile */
+    }
+
+    h2 {
+        font-size: 2rem !important;
+        margin-top: 2rem !important;
+    }
+  
+    p {
+      font-size: 1rem !important; /* Adjust paragraph size for mobile */
+      width: 80%; /* Adjust width for mobile */
+    }
+  }

@@ -1,0 +1,58 @@
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .flip-card {
+        background-color: transparent;
+        margin-top: 4rem;
+        margin-left: 3.5rem;
+        width: 40rem;
+        height: 28rem;
+        perspective: 1000px;
+        top: 10rem;
+      
+    }
+
+    .my-image {
+        max-width: 120% !important;
+        height: auto;
+        margin-top: 2rem !important;
+        margin-left: -1.2rem !important;
+      }
+
+    .image-and-title {
+        width: 38% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+  
+      .h1-text {
+        margin-top: 0.5rem !important;
+        margin-left: -5rem !important;
+        font-size: 1.88rem;
+        width: 200% !important;
+        font-weight: 600;
+        font-family: "Orbitron", sans-serif;
+      }
+  
+      .front-text {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-left: 20px;
+  
+        p {
+          margin-bottom: 3rem;
+          font-weight: 400;
+          font-size: 1.5rem !important;
+        }
+}
+
+.flip-card-back {
+    font-size: 1.5rem;
+  }
+
+.my-button {
+    font-size: 0.8rem !important;
+  }
+}

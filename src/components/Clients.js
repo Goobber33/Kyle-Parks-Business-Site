@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { Fade } from 'react-awesome-reveal';
 import Shed from '../assets/images/shed.jpg'
 import '../styles/Clients.scss'
+import '../styles/ClientQueries.scss'
 
 // Sample data, replace with your real data
 const clientsData = [
