@@ -46,7 +46,7 @@
     height: 10rem;
     margin: 25%;
     margin-bottom: 1.9rem !important;
-    padding: 0; 
+    padding: 0;
     margin-left: -5rem;
   }
 
@@ -81,7 +81,6 @@
   .hero-image-caption {
     font-size: 0.5rem !important;
   }
-  
 }
 
 @media only screen and (max-width: 767px) {
@@ -121,9 +120,8 @@
 }
 
 @media only screen and (max-width: 430px) {
-
   .hero-section {
-    height: 220vh !important;
+    height: 230vh !important;
   }
 
   .hero-section h1 {
@@ -196,11 +194,70 @@
     margin-left: 9rem !important;
     margin-top: 89rem;
   }
+}
 
+@media only screen and (max-width: 420px) {
+  .hero-section h1 {
+    padding-left: 3.7rem;
+  }
+
+  .script {
+    margin-left: 7.7rem !important;
+  }
+
+  .text-1 {
+    margin-left: 7.8rem !important;
+  }
+
+  .text-2 {
+    margin-left: 9.3rem !important;
+  }
+
+  .text-3 {
+    margin-left: 7.8rem !important;
+  }
+
+  .text-4 {
+    margin-left: 8.5rem !important;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+
+  .hero-section h1 {
+    padding-left: 3.4rem;
+  }
+
+  .hero-section h2 {
+    padding-left: 6.6rem;
+  }
+
+  .hero-image {
+    margin-left: -27.9rem !important;
+  }
+
+  .script {
+    margin-left: 7.3rem !important;
+  }
+
+  .text-1 {
+    margin-left: 7.4rem !important;
+  }
+
+  .text-2 {
+    margin-left: 9rem !important;
+  }
+
+  .text-3 {
+    margin-left: 7.5rem !important;
+  }
+
+  .text-4 {
+    margin-left: 8.2rem !important;
+  }
 }
 
 @media only screen and (max-width: 390px) {
-
   .hero-section {
     height: 210vh !important;
   }
@@ -245,7 +302,7 @@
     height: 15rem;
     margin-left: -26.7rem !important;
     margin-bottom: 2rem !important;
-    padding: 0; 
+    padding: 0;
     margin-left: -20rem;
   }
 
@@ -276,11 +333,9 @@
     margin-left: 8.1rem !important;
     margin-top: 84rem;
   }
-
 }
 
 @media only screen and (max-width: 360px) {
-
   .hero-section {
     height: 220vh !important;
   }
@@ -315,7 +370,7 @@
     height: 10rem;
     margin-left: -21.9rem !important;
     margin-bottom: 1.6rem !important;
-    padding: 0; 
+    padding: 0;
     margin-left: -20rem;
   }
 
@@ -346,12 +401,9 @@
     margin-left: 6rem !important;
     margin-top: 59.8rem;
   }
-
 }
 
-
 @media only screen and (max-width: 320px) {
-
   .hero-section {
     height: 220vh !important;
   }
@@ -386,7 +438,7 @@
     height: 10rem;
     margin-left: -21rem !important;
     margin-bottom: 1.6rem !important;
-    padding: 0; 
+    padding: 0;
     margin-left: -20rem;
   }
 
