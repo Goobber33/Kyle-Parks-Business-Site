@@ -50,7 +50,7 @@
 @media only screen and (max-width: 390px) {
 
   .testimonials {
-    height: 670vh;
+    height: 440vh;
   }
 
   .yours {
@@ -58,47 +58,65 @@
 
     .message {
       margin-right: 10%;
-      margin-left: -6rem;
+      margin-left: -21rem;
       margin-top: 1rem;
+      width: 18rem;
     }
+
+    p {
+      width: 15rem;
+      font-size: 1.2rem !important;
+    }
+
   }
 
   .testimonial-image {
-    margin-top: 22rem;
-    width: 10rem;
-    height: 10rem;
+    margin-top: 29rem;
+    margin-left: 5rem;
+    width: 13rem;
+    height: 13rem;
   }
 
   .testimonial-image2 {
-    margin-left: 0rem !important;
-    margin-top: 65rem !important;
-    width: 10rem;
-    height: 10rem;
+    margin-left: -15.4rem !important;
+    margin-top: 46rem !important;
+    width: 13rem;
+    height: 13rem;
   }
 
   .testimonial-image3 {
     margin-top: 58rem;
-    margin-left: 0rem;
-    width: 10rem;
-    height: 10rem;
+    margin-left: 5rem;
+    width: 13rem;
+    height: 13rem;
   }
 
   .mine {
   
     .message {
      
-      margin-left: 4%;
+      margin-left: 2.7rem;
       margin-top: -7rem;
-     
+      width: 18rem;
+    }
 
+    p {
+      width: 15rem;
+      font-size: 1.2rem !important;
     }
 }
 
   .others {
   
     .message {
-      margin-left: 24%; // This was changed from margin-left
+      margin-left: -2rem; // This was changed from margin-left
       margin-top: -10rem;
+      width: 18rem;
+    }
+
+    p {
+      width: 15rem;
+      font-size: 1.2rem !important;
     }
 }
 

@@ -92,9 +92,10 @@
       display: flex !important;
       justify-content: center !important;
       font-size: 1rem !important;
-      margin: 0.1rem !important;
+      margin: 0rem !important;
       color: #1a535c !important;
       background-color: white;
+      border: solid 2px #1A535C;
       width: 8rem;
       border-radius: 15px;
       /* Add other styles specific to 320px devices */
@@ -168,6 +169,7 @@
       font-size: 1rem !important;
       margin: 0.1rem !important;
       color: #1a535c !important;
+      border: solid 2px #1A535C;
       background-color: white;
       width: 8rem;
       border-radius: 15px;
