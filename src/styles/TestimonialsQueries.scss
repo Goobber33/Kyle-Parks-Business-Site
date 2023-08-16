@@ -46,3 +46,60 @@
 }
 
 }
+
+@media only screen and (max-width: 320px) {
+
+  .testimonials {
+    height: 670vh;
+  }
+
+  .yours {
+    align-items: flex-start;
+
+    .message {
+      margin-right: 10%;
+      margin-left: -6rem;
+      margin-top: -8rem;
+    }
+  }
+
+  .testimonial-image {
+    margin-top: 28rem;
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .testimonial-image2 {
+    margin-left: 0rem !important;
+    margin-top: 65rem !important;
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .testimonial-image3 {
+    margin-top: 62rem;
+    margin-left: 0rem;
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .mine {
+  
+    .message {
+     
+      margin-left: 4%;
+      margin-top: -7rem;
+     
+
+    }
+}
+
+  .others {
+  
+    .message {
+      margin-left: 24%; // This was changed from margin-left
+      margin-top: -10rem;
+    }
+}
+
+}

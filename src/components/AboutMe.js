@@ -45,23 +45,28 @@ function AboutMe() {
 
                                     <div className="front-text">
                                         <div className="statistics">
-                                            <div className="stat-item">
+                                            <div className="stat-item globe-icon">
                                                 <FontAwesomeIcon icon={faGlobe} /><p>97% of consumers search online for local services.</p>
                                             </div>
-                                            <div className="stat-item">
+                                            <div className="stat-item mobile-icon">
                                                 <FontAwesomeIcon icon={faMobileAlt} /><p>52% of all online traffic comes from mobile devices.</p>
                                             </div>
-                                            <div className="stat-item">
+                                            <div className="stat-item usercheck-icon">
                                                 <FontAwesomeIcon icon={faUserCheck} /><p>75% of consumers judge company credibility by website design.</p>
                                             </div>
-                                            <div className="stat-item">
+                                            <div className="stat-item chartline-icon">
                                                 <FontAwesomeIcon icon={faChartLine} /><p>Small businesses with websites grow 15.7% faster.</p>
                                             </div>
                                         </div>
+
                                         <Button className="my-button" onClick={handleClick}>Next</Button>
                                     </div>
                                 </div>
                                 <div className="flip-card-back">
+                                    <p style={{ fontFamily: "Orbitron", fontSize: "3rem", textAlign: "center", fontWeight: "600" }}>As a Freelance Full Stack Developer</p>
+                                    <p>
+                                        I specialize in crafting powerful online solutions that empower local businesses to thrive in the digital landscape. Recognizing that <span className="percentage percentage1">97%</span><strong> of consumers search online for local services</strong>, I create responsive and user-friendly websites that align with your brand and reach <span className="percentage percentage2">52%</span> of mobile traffic users. With <span className="percentage percentage3">75%</span><strong> of consumers judging credibility by website design</strong>, I prioritize creating visually appealing and functional designs that foster trust. My goal is to help your business grow <span className="percentage percentage4">15.7%</span><strong> faster by leveraging the potential of an effective online presence</strong>. Let's connect and transform your digital vision into reality!
+                                    </p>
                                     <Button className="my-button" onClick={handleClick}>Back</Button>
                                 </div>
                             </div>

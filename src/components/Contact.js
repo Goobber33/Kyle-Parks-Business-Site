@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithubAlt, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import Card from 'react-bootstrap/Card';
+import yourImage from '../assets/images/kyle.jpeg';
 import '../styles/Contact.scss';
 import '../styles/ContactQuery.scss';
 
@@ -16,6 +17,7 @@ function PricingCard() {
                         <Card.Text>Business Site: $45/hr</Card.Text>
                         <Card.Text>Portfolio: $35/hr</Card.Text>
                         <Card.Text>Configuration/Maintenance: $25/hr</Card.Text>
+                        <p className="pcard">Prices Are Negotiable Under Certain Circumstances. Contact Me To Discuss. </p>
                     </div>
                 </Card.Body>
             </Card>
@@ -27,6 +29,10 @@ function Contact() {
     return (
         <div className="form-bg">
             <PricingCard />
+            <div className="image-container">
+            <img src={yourImage} alt="" />
+            </div>
+            <h2 className="contact-header">Founder / Owner</h2>
             <div className="yek-social">
                 <ul className="yek-social__list">
                     <li className="yek-social__item">

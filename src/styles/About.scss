@@ -118,8 +118,35 @@
     align-items: center;
     justify-content: center;
     padding: 30px;
-    font-size: 2.2rem;
+    font-size: 1.6rem;
     font-weight: 400;
+    border: solid 4px black;
+  }
+
+  p {
+    margin-top: 1rem;
+    width: 80%;
+  }
+}
+
+
+.percentage {
+  font-weight: bold;
+
+  &.percentage1 {
+    color: rgba(255, 51, 102);
+  }
+
+  &.percentage2 {
+    color: rgba(34, 139, 34);
+  }
+
+  &.percentage3 {
+    color: #3357FF;
+  }
+
+  &.percentage4 {
+    color: rgba(255, 160, 0);
   }
 }
 
@@ -202,7 +229,7 @@
 
       svg {
           margin-right: 1rem;
-          font-size: 2.3rem;
+          font-size: 2.7rem;
           color: white; // You can customize the color
       }
 
@@ -213,6 +240,26 @@
         width: 200%;
         color: white;
       }
+  }
+}
+
+.statistics {
+  .stat-item {
+    &:nth-child(1) svg {
+      color: rgba(255,51,102);
+    }
+
+    &:nth-child(2) svg {
+      color: #33FF57;
+    }
+
+    &:nth-child(3) svg {
+      color: #3357FF;
+    }
+
+    &:nth-child(4) svg {
+      color: rgba(255, 160, 0);
+    }
   }
 }
 
