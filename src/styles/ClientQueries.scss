@@ -23,6 +23,32 @@
     }
   }
 
+  @media only screen and (max-width: 390px) {
+
+    .container {
+      height: 150vh !important;
+  }
+
+  .client-image {
+    max-width: 30rem !important; /* Adjust size for mobile */
+  }
+
+  h3 {
+    font-size: 2rem !important; /* Adjust font size for mobile */
+  }
+
+  h2 {
+      font-size: 2rem !important;
+      margin-top: 2rem !important;
+  }
+
+  p {
+    font-size: 0.7rem !important; /* Adjust paragraph size for mobile */
+    
+  }
+
+  }
+
   @media only screen and (max-width: 360px) {
 
     .container {
