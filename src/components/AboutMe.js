@@ -63,7 +63,7 @@ function AboutMe() {
                                     </div>
                                 </div>
                                 <div className="flip-card-back">
-                                    <p style={{ fontFamily: "Orbitron", fontSize: "3rem", textAlign: "center", fontWeight: "600" }}>As a Freelance Full Stack Developer</p>
+                                    <h1 style={{ fontFamily: "Orbitron", fontSize: "3.6rem", textAlign: "center", fontWeight: "600" }}>As a Freelance Full Stack Developer</h1>
                                     <p>
                                         I specialize in crafting powerful online solutions that empower local businesses to thrive in the digital landscape. Recognizing that <span className="percentage percentage1">97%</span><strong> of consumers search online for local services</strong>, I create responsive and user-friendly websites that align with your brand and reach <span className="percentage percentage2">52%</span> of mobile traffic users. With <span className="percentage percentage3">75%</span><strong> of consumers judging credibility by website design</strong>, I prioritize creating visually appealing and functional designs that foster trust. My goal is to help your business grow <span className="percentage percentage4">15.7%</span><strong> faster by leveraging the potential of an effective online presence</strong>. Let's connect and transform your digital vision into reality!
                                     </p>
