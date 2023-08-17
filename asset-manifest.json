@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Kyle-Parks-Business-Site/static/css/main.5398587b.css",
+    "main.css": "/Kyle-Parks-Business-Site/static/css/main.b1dccbff.css",
     "main.js": "/Kyle-Parks-Business-Site/static/js/main.465efadb.js",
     "static/js/787.72ed5598.chunk.js": "/Kyle-Parks-Business-Site/static/js/787.72ed5598.chunk.js",
     "static/media/website.jpg": "/Kyle-Parks-Business-Site/static/media/website.7c1e38046f5ebb78e726.jpg",
@@ -14,12 +14,12 @@
     "static/media/george.jpg": "/Kyle-Parks-Business-Site/static/media/george.db025b563add1ea6a5a7.jpg",
     "static/media/casey.jpeg": "/Kyle-Parks-Business-Site/static/media/casey.c8a0b8d13faefaf31073.jpeg",
     "index.html": "/Kyle-Parks-Business-Site/index.html",
-    "main.5398587b.css.map": "/Kyle-Parks-Business-Site/static/css/main.5398587b.css.map",
+    "main.b1dccbff.css.map": "/Kyle-Parks-Business-Site/static/css/main.b1dccbff.css.map",
     "main.465efadb.js.map": "/Kyle-Parks-Business-Site/static/js/main.465efadb.js.map",
     "787.72ed5598.chunk.js.map": "/Kyle-Parks-Business-Site/static/js/787.72ed5598.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5398587b.css",
+    "static/css/main.b1dccbff.css",
     "static/js/main.465efadb.js"
   ]
 }
