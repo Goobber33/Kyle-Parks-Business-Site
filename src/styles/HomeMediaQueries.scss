@@ -139,13 +139,14 @@
 
 @media only screen and (max-width: 430px) {
   .hero-section {
-    height: 230vh !important;
+    height: 260vh !important;
   }
 
   .hero-section h1 {
     font-size: 3em;
     padding-left: 3.2rem;
-    margin-top: 8rem;
+    margin-top: 10rem;
+    margin-bottom: -2rem;
     word-spacing: -0.1rem;
   }
 
@@ -153,35 +154,35 @@
     font-size: 1.2rem !important;
     padding-left: 7.2rem;
     width: 200% !important;
-    margin-top: -0.3rem !important;
+    margin-top: 2rem !important;
+    margin-bottom: -2rem;
   }
 
   .hero-section p {
     font-size: 1rem !important;
     width: 100%;
     margin-left: -3.3rem;
-    margin-top: -1rem;
+    margin-top: 2rem;
   }
 
   .script {
     margin-left: 8rem !important;
-    margin-top: -11rem;
+    margin-top: -9rem;
   }
 
   .script lottie-player {
     width: 150px !important;
     height: 150px !important;
-    margin-bottom: 6rem !important;
   }
 
   .d-flex {
-    margin-top: 44rem !important;
+    margin-top: 57rem !important;
   }
 
   .hero-image {
     width: 19rem;
     height: 16rem;
-    margin-left: -28.5rem !important;
+    margin-left: -28.4rem !important;
     margin-bottom: 2rem !important;
     padding: 0;
   }
@@ -192,27 +193,30 @@
 
   .text-1 {
     font-size: 1.3rem;
-    margin-left: 7.5rem !important;
-    margin-top: 31.5rem;
+    margin-left: 7.7rem !important;
+    margin-top: 44.5rem;
     text-underline-offset: 0.3em;
   }
 
   .text-2 {
     font-size: 1.3rem;
-    margin-left: 9.9rem !important;
-    margin-top: 51rem;
+    margin-left: 9.71rem !important;
+    margin-top: 63.6rem;
+    text-underline-offset: 0.3em;
   }
 
   .text-3 {
     font-size: 1.3rem;
-    margin-left: 8.5rem !important;
-    margin-top: 70rem;
+    margin-left: 7.8rem !important;
+    margin-top: 82.5rem;
+    text-underline-offset: 0.3em;
   }
 
   .text-4 {
     font-size: 1.3rem;
-    margin-left: 8.9rem !important;
-    margin-top: 89rem;
+    margin-left: 8.39rem !important;
+    margin-top: 101.5rem;
+    text-underline-offset: 0.3em;
   }
 }
 
