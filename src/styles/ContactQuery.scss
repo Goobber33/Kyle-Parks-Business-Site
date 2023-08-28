@@ -27,7 +27,7 @@
     align-items: flex-end;
     margin-top: 10rem;
     margin-bottom: 4rem;
-    margin-left: 0rem;
+    margin-left: 0.2rem !important;
 
     &__list {
       width: 100%;
@@ -36,7 +36,7 @@
     }
 
     &__item {
-      width: 25%;
+      width: 30%;
       height: 100%;
       border-radius: 9px;
     }
@@ -51,6 +51,18 @@
       position: relative;
       transform: perspective(1000px) rotate(-25deg) skew(25deg);
     }
+  }
+
+  .yek-social__button::after {
+    height: 12px;
+    bottom: -12px;
+    left: -5.5px;
+  }
+
+  .yek-social__button::before {
+    width: 12px;
+    top: 5.5px;
+    left: -11px;
   }
 
   .image-container img {
