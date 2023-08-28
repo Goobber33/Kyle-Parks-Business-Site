@@ -58,6 +58,8 @@ h1 {
   z-index: 2;
   font-size: 2rem;
   font-weight: bold;
+  text-decoration: underline rgb(255,51,102);
+  text-underline-offset: 0.2em;
 }
 
 .text-2 {
@@ -67,6 +69,8 @@ h1 {
   z-index: 2;
   font-size: 2rem;
   font-weight: bold;
+  text-decoration: underline rgba(34, 139, 34);
+  text-underline-offset: 0.2em;
 }
 
 .text-3 {
@@ -76,6 +80,8 @@ h1 {
   z-index: 2;
   font-size: 2rem;
   font-weight: bold;
+  text-decoration: underline rgba(143, 0, 255);
+  text-underline-offset: 0.2em;
 }
 
 .text-4 {
@@ -85,6 +91,8 @@ h1 {
   z-index: 2;
   font-size: 2rem;
   font-weight: bold;
+  text-decoration: underline rgba(255, 160, 0);
+  text-underline-offset: 0.2em;
 }
 
 .hero-section p {
