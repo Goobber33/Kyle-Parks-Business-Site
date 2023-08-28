@@ -1,31 +1,32 @@
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 820px) {
   .flip-card {
     background-color: transparent;
-    margin-top: 4rem;
-    margin-left: 3.5rem;
-    width: 40rem;
-    height: 28rem;
+    margin-top: 17rem;
+    margin-left: 0.5rem;
+    width: 48rem;
+    height: 38rem;
     perspective: 1000px;
     top: 10rem;
   }
 
   .header-container h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .header-container h2 {
-    font-size: 1rem !important;
+    font-size: 1.5rem !important;
   }
 
   .stat-item {
-    margin-left: -13rem !important;
+    margin-left: -15.5rem !important;
+    margin-bottom: 1.6rem !important;
 
     svg {
-      font-size: 1.8rem !important;
+      font-size: 2.5rem !important;
     }
 
     p {
-      font-size: 0.9rem !important;
+      font-size: 1.4rem !important;
       margin-top: 0rem !important;
     }
   }
@@ -37,8 +38,12 @@
   .flip-card-back {
     p {
       font-size: 1rem !important;
-      margin-bottom: 6rem !important;
+      margin-bottom: 9rem !important;
       margin-top: -2rem !important;
+    }
+    h1 {
+      font-size: 2.3rem !important;
+      margin-bottom: 5rem !important;
     }
   }
 

@@ -6,22 +6,22 @@
 
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 820px) {
 
     .container {
-        height: 150vh !important;
+        height: 100vh !important;
     }
 
     .client-image {
-      max-width: 30rem !important; /* Adjust size for mobile */
+      max-width: 40rem !important; /* Adjust size for mobile */
     }
   
     h3 {
-      font-size: 2rem !important; /* Adjust font size for mobile */
+      font-size: 3rem !important; /* Adjust font size for mobile */
     }
 
     h2 {
-        font-size: 2rem !important;
+        font-size: 3rem !important;
         margin-top: 2rem !important;
     }
   

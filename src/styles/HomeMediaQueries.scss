@@ -16,36 +16,39 @@
 
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 820px) {
   /* Your tablet specific styles go here */
 
   .hero-section h1 {
     font-size: 2.8em;
-    padding-left: 4rem;
-    margin-top: -4rem;
+    padding-left: 2rem;
+    margin-top: -15rem;
     word-spacing: -0.1rem;
+    width: 90%;
   }
 
   .hero-section h2 {
-    font-size: 1em;
-    padding-left: 8rem;
+    font-size: 1.4rem !important; 
+    padding-left: 5rem;
+    margin-top: -1rem !important;
+    
   }
 
   .hero-section p {
     font-size: 1rem;
-    width: 100%;
-    margin-left: -3.1rem;
+    width: 60%;
+    margin-left: -2.5rem;
     margin-top: -1rem;
   }
 
   .script {
-    margin-left: 8rem !important;
+    margin-left: 5rem !important;
     margin-top: -12rem;
   }
 
   .script lottie-player {
-    width: 150px !important;
-    height: 150px !important;
+    width: 190px !important;
+    height: 190px !important;
   }
 
   .hero-text {
@@ -60,44 +63,45 @@
   }
 
   .hero-image {
-    width: 10rem;
-    height: 10rem;
-    margin: 25%;
+    width: 13rem;
+    height: 13rem;
+    margin: 18%;
     margin-bottom: 1.9rem !important;
     padding: 0;
-    margin-left: -5rem;
+    margin-left: -4.5rem;
   }
 
   .d-flex {
-    margin-top: 3rem !important;
+    margin-top: -6rem !important;
+    margin-left: -11rem;;
   }
 
   .text-1 {
     font-size: 1.3rem;
-    margin-left: -32.1rem !important;
-    margin-top: 1.5rem;
+    margin-left: -33.8rem !important;
+    margin-top: 13rem;
   }
 
   .text-2 {
     font-size: 1.3rem;
-    margin-left: -19.8rem !important;
-    margin-top: 1.4rem;
+    margin-left: -18.3rem !important;
+    margin-top: 12.9rem;
   }
 
   .text-3 {
     font-size: 1.3rem;
-    margin-left: -32.2rem !important;
-    margin-top: -10rem;
+    margin-left: -33.8rem !important;
+    margin-top: 4.6rem;
   }
 
   .text-4 {
     font-size: 1.3rem;
-    margin-left: -21rem !important;
-    margin-top: -10rem;
+    margin-left: -19.6rem !important;
+    margin-top: 4.6rem;
   }
 
   .hero-image-caption {
-    font-size: 0.5rem !important;
+    font-size: 0.66rem !important;
   }
 }
 
