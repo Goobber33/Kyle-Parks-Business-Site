@@ -11,16 +11,17 @@ $margin: 1rem;
   position: relative;
   background-color: $backgroundColor;
   padding: 1rem;
-  margin: 0 32%;  /* Adjust this to change the distance from the edges */
-  border-radius: 0 0 45px 45px;  /* Adjust the values as needed */
-  overflow: hidden; /* Ensures that child elements don't overflow the border-radius */
+  margin: 0 32%;
+  border-radius: 0 0 45px 45px;
+  overflow: hidden;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
   z-index: 1; 
+  height: 5.5rem;
 
   .navbar {
     background-color: $backgroundColor;
     height: $navbarHeight;
-    margin: 0; /* Resetting the margin */
+    margin: 0;
     right: 0.6rem;
 
     &-brand, &-nav .nav-link {
@@ -38,9 +39,29 @@ $margin: 1rem;
   .active {
     color: $activeColor !important;
   }
+
+  .desktop-nav {
+    display: flex;
+    align-items: center;
+    background-color: $backgroundColor;
+    margin: 0;
+    right: 0.6rem;
+
+    .nav-link {
+      color: $navLinkColor;
+      transition: color $transitionTime;
+      font-size: $fontSize;
+      margin: $margin;
+      margin-top: -3rem;
+      z-index: 1000;
+
+      &:hover {
+        color: $navLinkHoverColor;
+      }
+    }
+  }
 }
 
 .hidden {
   display: none !important;
 }
-

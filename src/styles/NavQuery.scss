@@ -1,3 +1,14 @@
+@media (min-width: 1000px) and (max-width: 1024px) {
+  .centered-toggle {
+    display: block !important;
+  }
+  
+  .collapse-hidden {
+    display: none !important;
+  }
+  
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
   .navbar-wrapper {
@@ -30,7 +41,7 @@
     .centered-toggle {
       position: fixed; // Use 'fixed' instead of 'absolute'
       top: 1rem;
-      left: 4.5rem;
+      left: 1rem;
       background-color: #1a535c;
       border: none;
       color: white !important;
@@ -64,6 +75,20 @@
       }
     }
   }
+}
+
+@media only screen and (max-width: 1366px) {
+
+  .navbar-wrapper {
+    width: 52%;
+    margin-left: 20.5rem;
+  }
+
+  .desktop-nav {
+    width: 170%;
+    margin-left: 2.2rem !important;
+  }
+
 }
 
 @media only screen and (max-width: 430px) {
