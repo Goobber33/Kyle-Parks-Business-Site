@@ -46,7 +46,7 @@ function NavigationBar() {
             onClick={() => setNavOpen(!navOpen)}
           />
           <Navbar.Collapse id="basic-navbar-nav" className={`justify-content-center${navOpen ? ' show' : ' collapse-hidden'}`}>
-            <Nav className="m-auto">
+            <Nav className={`m-auto${showToggle ? '' : ' hidden'}`}>
               {windowWidth <= 1024 ? (
                 <>
                   <Link activeClass="active" to="home" spy={true} smooth={true} duration={0} className="nav-link">Home</Link>
@@ -56,6 +56,7 @@ function NavigationBar() {
                 </>
               ) : null}
             </Nav>
+
           </Navbar.Collapse>
         </Navbar>
         {windowWidth > 1024 && (
