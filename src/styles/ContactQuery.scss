@@ -102,6 +102,56 @@
   }
 }
 
+@media only screen and (max-width: 393px) {
+  .yek-social {
+    width: 400px;
+    height: 150px;
+    padding: 9px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+    margin-left: -1.2rem !important;
+
+    &__list {
+      width: 100%;
+      height: auto;
+      padding-bottom: 10px;
+    }
+
+    &__item {
+      width: 25%;
+      height: 100%;
+      border-radius: 9px;
+    }
+
+    &__button {
+      width: 35px;
+      height: 35px;
+      background-color: #fff;
+      box-shadow: -20px 20px 5px rgba(68, 68, 68, 0.5);
+      text-align: center;
+      transition: 0.5s 0.15s;
+      position: relative;
+      transform: perspective(1000px) rotate(-25deg) skew(25deg);
+    }
+  }
+
+  .image-container img {
+    width: 40%;
+  }
+
+  .contact-header {
+    font-size: 1rem !important;
+  }
+
+  .yek-social__icon {
+    font-size: 1em;
+  }
+}
+
 @media only screen and (max-width: 390px) {
   .yek-social {
     width: 400px;

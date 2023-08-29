@@ -248,6 +248,62 @@
 
 }
 
+@media only screen and (max-width: 393px) {
+
+  .flip-card {
+    margin-top: 4rem;
+    margin-left: 12.55rem !important;
+    width: 23.5rem;
+    height: 34rem;
+    top: 10rem;
+  }
+
+  .header-container h1 {
+    font-size: 1.4rem;
+  }
+
+  .header-container h2 {
+    font-size: 1rem !important;
+  }
+
+  .stat-item {
+    margin-left: -18.5rem !important;
+    margin-top: 0rem !important;
+    margin-bottom: 1.6rem !important;
+
+    svg {
+      font-size: 1.6rem !important;
+      margin-top: -0.6rem;
+    }
+
+    p {
+      font-size: 0.8rem !important;
+      width: 50% !important;
+      margin-top: 0rem !important;
+    }
+  }
+
+  .my-button {
+    font-size: 0.8rem !important;
+    margin-top: -6.5rem !important;
+  }
+
+  .flip-card-back {
+    p {
+      font-size: 0.89rem !important;
+      margin-bottom: 8rem !important;
+      margin-top: -5rem !important;
+      width: 93%;
+    }
+
+    h1 {
+      font-size: 1.3rem !important;
+      margin-bottom: 6.5rem !important;
+    }
+  }
+
+}
+
 @media only screen and (max-width: 390px) {
 
   .flip-card {

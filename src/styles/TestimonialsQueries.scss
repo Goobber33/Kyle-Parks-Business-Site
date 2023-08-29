@@ -211,6 +211,75 @@
   }
 }
 
+@media only screen and (max-width: 393px) {
+  .testimonials {
+    height: 400vh !important;
+  }
+
+  .yours {
+    align-items: flex-start;
+
+    .message {
+      margin-right: 10%;
+      margin-left: -21rem;
+      margin-top: 1rem;
+      width: 18rem;
+    }
+
+    p {
+      width: 15rem;
+      font-size: 1.2rem !important;
+    }
+  }
+
+  .testimonial-image {
+    margin-top: 29rem;
+    margin-left: 5rem;
+    width: 13rem;
+    height: 13rem;
+  }
+
+  .testimonial-image2 {
+    margin-left: -17.5rem !important;
+    margin-top: 26rem !important;
+    width: 13rem;
+    height: 13rem;
+  }
+
+  .testimonial-image3 {
+    margin-top: 33rem;
+    margin-left: 5rem;
+    width: 13rem;
+    height: 13rem;
+  }
+
+  .mine {
+    .message {
+      margin-left: 2.7rem;
+      margin-top: -7rem;
+      width: 18rem;
+    }
+
+    p {
+      width: 15rem;
+      font-size: 1.2rem !important;
+    }
+  }
+
+  .others {
+    .message {
+      margin-left: -2rem; // This was changed from margin-left
+      margin-top: -10rem;
+      width: 18rem;
+    }
+
+    p {
+      width: 15rem;
+      font-size: 1.2rem !important;
+    }
+  }
+}
+
 @media only screen and (max-width: 390px) {
   .testimonials {
     height: 400vh !important;
