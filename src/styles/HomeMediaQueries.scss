@@ -14,10 +14,96 @@
   }
 }
 
+@media only screen and (max-width: 1792px) {
+  .hero-section h1 {
+    font-size: 6.5rem;
+    padding-left: 8rem;
+    margin-top: -9rem;
+    word-spacing: -0.1rem;
+    width: 100%;
+  }
+
+  .hero-section h2 {
+    font-size: 2.8rem !important;
+    padding-left: 13.8rem;
+    margin-top: 0rem !important;
+  }
+
+  .hero-section p {
+    font-size: 2rem;
+    width: 80%;
+    margin-left: -0.5rem;
+    margin-top: 1rem;
+  }
+
+  .script {
+    margin-left: 18rem !important;
+    margin-top: -4rem;
+  }
+
+  .script lottie-player {
+    width: 230px !important;
+    height: 230px !important;
+  }
+
+  .hero-text {
+    min-width: 200px;
+  }
+
+  .text-1,
+  .text-2,
+  .text-3,
+  .text-4 {
+    left: 60rem;
+  }
+
+  .hero-image {
+    width: 24rem;
+    height: 21rem;
+    margin: 18%;
+    margin-bottom: 3rem !important;
+    padding: 0;
+    margin-left: -8rem;
+  }
+
+  .d-flex {
+    margin-top: -2rem !important;
+    margin-left: 7rem;
+  }
+
+  .text-1 {
+    font-size: 1.8rem;
+    margin-left: 6rem !important;
+    margin-top: -1.5rem;
+  }
+
+  .text-2 {
+    font-size: 1.8rem;
+    margin-left: 34rem !important;
+    margin-top: -1.5rem;
+  }
+
+  .text-3 {
+    font-size: 1.8rem;
+    margin-left: 6rem !important;
+    margin-top: -1rem;
+  }
+
+  .text-4 {
+    font-size: 1.8rem;
+    margin-left: 32.2rem !important;
+    margin-top: -1rem;
+  }
+
+  .hero-image-caption {
+    font-size: 1.1rem !important;
+  }
+}
+
 @media only screen and (max-width: 1680px) {
   .hero-section h1 {
     font-size: 6rem;
-    padding-left: 6rem;
+    padding-left: 8rem;
     margin-top: -12rem;
     word-spacing: -0.1rem;
     width: 100%;
@@ -25,7 +111,7 @@
 
   .hero-section h2 {
     font-size: 2.4rem !important;
-    padding-left: 12rem;
+    padding-left: 13.8rem;
     margin-top: 0rem !important;
   }
 
@@ -37,7 +123,7 @@
   }
 
   .script {
-    margin-left: 17rem !important;
+    margin-left: 17.3rem !important;
     margin-top: -4rem;
   }
 

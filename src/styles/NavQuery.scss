@@ -77,6 +77,20 @@
   }
 }
 
+@media only screen and (max-width: 1792px) {
+
+  .navbar-wrapper {
+    width: 42%;
+    margin-left: 33rem;
+  }
+
+  .desktop-nav {
+    width: 170%;
+    margin-left: 2.2rem !important;
+  }
+
+}
+
 @media only screen and (max-width: 1680px) {
 
   .navbar-wrapper {
