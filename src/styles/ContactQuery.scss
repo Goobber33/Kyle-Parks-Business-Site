@@ -1,3 +1,21 @@
+@media only screen and (max-width: 1792px) {
+  .yek-social {
+    width: 650px;
+    height: 250px;
+    padding: 9px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 10rem;
+    margin-left: 35rem;
+  }
+
+  .image-container img {
+    width: 30%;
+  }
+}
+
 @media only screen and (max-width: 1680px) {
   .yek-social {
     width: 650px;
