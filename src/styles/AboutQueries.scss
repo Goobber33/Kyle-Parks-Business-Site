@@ -1,3 +1,56 @@
+@media only screen and (max-width: 1680px) {
+  .flip-card {
+    background-color: transparent;
+    margin-top: 4.5rem;
+    margin-left: -10.2rem;
+    width: 75rem;
+    height: 48rem;
+    perspective: 1000px;
+  }
+
+  .header-container h1 {
+    font-size: 3.5rem;
+  }
+
+  .header-container h2 {
+    font-size: 2rem !important;
+  }
+
+  .stat-item {
+    margin-left: -3rem !important;
+    margin-bottom: 2.5rem !important;
+
+    svg {
+      font-size: 2rem !important;
+    }
+
+    p {
+      font-size: 1.7rem !important;
+      margin-top: 0rem !important;
+    }
+  }
+
+  .my-button {
+    margin-top: -4rem !important;
+  }
+
+  .flip-card-back {
+    p {
+      font-size: 1.6rem !important;
+      margin-bottom: 9rem !important;
+      margin-top: -2rem !important;
+    }
+    h1 {
+      font-size: 3rem !important;
+      margin-bottom: 5rem !important;
+    }
+  }
+
+  .my-button {
+    font-size: 1.5rem !important;
+  }
+}
+
 @media only screen and (max-width: 1366px) {
   .flip-card {
     background-color: transparent;
