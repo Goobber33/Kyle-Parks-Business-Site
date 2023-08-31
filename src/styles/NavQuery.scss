@@ -105,6 +105,20 @@
 
 }
 
+@media only screen and (max-width: 1488px) {
+
+  .navbar-wrapper {
+    width: 48%;
+    margin-left: 26rem;
+  }
+
+  .desktop-nav {
+    width: 170%;
+    margin-left: 2.2rem !important;
+  }
+
+}
+
 @media only screen and (max-width: 1366px) {
 
   .navbar-wrapper {
