@@ -51,6 +51,59 @@
   }
 }
 
+@media only screen and (max-width: 1488px) {
+  .flip-card {
+    background-color: transparent;
+    margin-top: 4rem;
+    margin-left: -11.5rem;
+    width: 70rem;
+    height: 42rem;
+    perspective: 1000px;
+  }
+
+  .header-container h1 {
+    font-size: 3rem;
+  }
+
+  .header-container h2 {
+    font-size: 2rem !important;
+  }
+
+  .stat-item {
+    margin-left: -7rem !important;
+    margin-bottom: 2.4rem !important;
+
+    svg {
+      font-size: 2rem !important;
+    }
+
+    p {
+      font-size: 1.5rem !important;
+      margin-top: 0rem !important;
+    }
+  }
+
+  .my-button {
+    margin-top: -6rem !important;
+  }
+
+  .flip-card-back {
+    p {
+      font-size: 1.6rem !important;
+      margin-bottom: 9rem !important;
+      margin-top: -2rem !important;
+    }
+    h1 {
+      font-size: 3rem !important;
+      margin-bottom: 5rem !important;
+    }
+  }
+
+  .my-button {
+    font-size: 1.5rem !important;
+  }
+}
+
 @media only screen and (max-width: 1366px) {
   .flip-card {
     background-color: transparent;
