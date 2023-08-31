@@ -157,6 +157,60 @@
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .flip-card {
+    background-color: transparent;
+    margin-top: 17rem;
+    margin-left: -6.8rem;
+    width: 58rem;
+    height: 45rem;
+    perspective: 1000px;
+    top: 10rem;
+  }
+
+  .header-container h1 {
+    font-size: 3rem;
+  }
+
+  .header-container h2 {
+    font-size: 2rem !important;
+  }
+
+  .stat-item {
+    margin-left: -15.5rem !important;
+    margin-bottom: 3rem !important;
+
+    svg {
+      font-size: 3rem !important;
+    }
+
+    p {
+      font-size: 1.7rem !important;
+      margin-top: 0rem !important;
+    }
+  }
+
+  .my-button {
+    margin-top: -6rem !important;
+  }
+
+  .flip-card-back {
+    p {
+      font-size: 1.3rem !important;
+      margin-bottom: 9rem !important;
+      margin-top: -2rem !important;
+    }
+    h1 {
+      font-size: 2.5rem !important;
+      margin-bottom: 5rem !important;
+    }
+  }
+
+  .my-button {
+    font-size: 1.1rem !important;
+  }
+}
+
 @media only screen and (max-width: 820px) {
   .flip-card {
     background-color: transparent;
